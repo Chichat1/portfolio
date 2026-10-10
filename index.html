@@ -4,36 +4,37 @@
   <!--------------------------------->
   <!--          GOOGLE TAG         -->
   <!--------------------------------->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKEN3DRMSZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKEN3DRMSZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-RKEN3DRMSZ');
-</script>
+    gtag('config', 'G-RKEN3DRMSZ');
+  </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Portfólio - Samuel Araújo, Anestesiologia Veterinária e Ciência de Dados">
+  <!-- Descrição única para buscadores (Q3) -->
+  <meta name="description" content="MV Samuel Araújo - Anestesiologia Veterinária. Anestesia multimodal balanceada, monitoração e controle da dor para clínicas veterinárias parceiras em Balsas-MA e região.">
   <meta name="author" content="Samuel Araújo">
 
-<!-- Descrição padrão para buscadores -->
-<meta name="description" content="Portfólio de Samuel Araújo, Anestesiologia. Conheça projetos">
+  <link rel="canonical" href="https://chichat1.github.io/portfolio/">
 
   <!--------------------------------->
   <!--         OPEN GRAPH          -->
   <!--------------------------------->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://chichat1.github.io/portfolio/">
-<meta property="og:title" content="Portfólio | MV Esp Samuel Araújo">
-<meta property="og:description" content="Projetos em Anestesiologia Veterinária e Ciência de Dados aplicada.">
-<meta property="og:image" content="https://chichat1.github.io/assets/images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chichat1.github.io/portfolio/">
+  <meta property="og:title" content="MV Samuel Araújo | Anestesiologia Veterinária">
+  <meta property="og:description" content="Anestesiologia Veterinária multimodal balanceada e controle da dor para clínicas parceiras.">
+  <meta property="og:image" content="https://chichat1.github.io/portfolio/assets/images/og/og-clinicas.jpg">
 
-  <title>MV Samuel Araújo | Anestesiologia Veterinária & Ciência de Dados</title>
+  <!-- Título profissional e compatível (Q10) -->
+  <title>MV Samuel Araújo | Anestesiologia Veterinária</title>
 
-
-  <link rel="icon" type="image/png" href="assets/images/project/icon2.png">
+  <!-- Favicon corrigido (B3) -->
+  <link rel="icon" type="image/png" href="assets/images/optimized/favicon.png">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/unicons.css">
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -44,17 +45,17 @@
 
 </head>
 
-
-<body>
-
+<body data-page="clinicas">
   <!--------------------------------->
   <!--      MENU DE NAVEGAÇÃO      -->
   <!--------------------------------->
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/images/raw/headerlight.png" alt="assets/images/raw/headerdark.png"
-          style="width: 60px; height: 60px; margin-right: 8px;">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/optimized/headerlight.webp"
+             data-src-dark="assets/images/optimized/headerdark.webp"
+             alt="Logo MV Samuel Araújo"
+             class="brand-logo">
         Samuel Araújo
       </a>
 
@@ -79,15 +80,20 @@
           <li class="nav-item">
             <a href="#contact" class="nav-link"><span data-hover="Contato">Contato</span></a>
           </li>
+          <li class="nav-item">
+            <a href="links/" class="nav-link"><span data-hover="Link na Bio">Link na Bio</span></a>
+          </li>
         </ul>
 
         <ul class="navbar-nav ml-lg-auto">
-          <div class="ml-lg-4">
-            <div class="color-mode d-lg-flex justify-content-center align-items-center">
-              <i class="color-mode-icon"></i>
-              Modo de cor
+          <li class="nav-item">
+            <div class="ml-lg-4">
+              <div class="color-mode d-lg-flex justify-content-center align-items-center" role="button" tabindex="0">
+                <i class="color-mode-icon"></i>
+                Modo de cor
+              </div>
             </div>
-          </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -108,10 +114,10 @@
               <div class="animated-info">
                 <span class="animated-item">Samuel Araújo</span>
                 <span class="animated-item">Médico Veterinário</span>
-                <span class="animated-item">Cientista de dados</span>
+                <span class="animated-item">Anestesiologista</span>
               </div>
             </h1>
-            <p style="font-weight: bold; color: #000; font-size: 16px; text-align: justify;" class="dark-mode-text">
+            <p class="about-description dark-mode-text">
               Médico veterinário formado pela Universidade Federal do Norte do Tocantins (UFNT) - 2024.
               Durante a graduação, atuou como monitor nas disciplinas de Fisiologia I e II,
               além de ocupar posição de secretário no Grupo de Extensão e Estudos de Animais Silvestres do Tocantins
@@ -126,29 +132,36 @@
 
             <div class="custom-btn-group mt-4">
               <a href="https://wa.me/5563992332009?text=Ol%C3%A1!%20Encontrei%20seu%20contato%20no%20seu%20site.%20Poderia%20me%20ajudar%3F"
-                target="_blank" class="btn custom-btn custom-btn-bg custom-btn-link">
+                target="_blank" rel="noopener noreferrer" class="btn custom-btn custom-btn-bg">
                 Fale comigo!
               </a>
 
-              <a href="https://www.linkedin.com/in/araujosamuelima/" target="_blank"
-                class="btn custom-btn custom-btn-link">
-                <img src="assets/images/raw/linkedin_icon.png" alt="assets/images/raw/linkedin_icon.png"
-                  style="width: 24px; height: 24px;">
+              <a href="https://www.linkedin.com/in/araujosamuelima/" target="_blank" rel="noopener noreferrer"
+                class="btn custom-btn" aria-label="LinkedIn">
+                <img src="assets/images/optimized/linkedin_icon.webp"
+                     data-src-dark="assets/images/optimized/linkedin_dark.webp"
+                     alt="Ícone LinkedIn"
+                     class="social-btn-icon">
               </a>
 
-              <a href="https://www.instagram.com/mvsamuel.ajlima/" target="_blank"
-                class="btn custom-btn custom-btn-link">
-                <img src="assets/images/raw/instagram_icon.png" alt="assets/images/raw/instagram_icon.png"
-                  style="width: 24px; height: 24px;">
+              <a href="https://www.instagram.com/mvsamuel.ajlima/" target="_blank" rel="noopener noreferrer"
+                class="btn custom-btn" aria-label="Instagram">
+                <img src="assets/images/optimized/instagram_icon.webp"
+                     data-src-dark="assets/images/optimized/instagram_dark.webp"
+                     alt="Ícone Instagram"
+                     class="social-btn-icon">
               </a>
 
-              <a href="http://lattes.cnpq.br/4197961647434142" target="_blank" class="btn custom-btn custom-btn-link">
-                <img src="assets/images/raw/lattes_icon.png" alt="assets/images/raw/lattes_icon.png"
-                  style="width: 24px; height: 24px;">
+              <a href="http://lattes.cnpq.br/4197961647434142" target="_blank" rel="noopener noreferrer"
+                class="btn custom-btn" aria-label="Currículo Lattes">
+                <img src="assets/images/optimized/lattes_icon.webp"
+                     alt="Ícone Currículo Lattes"
+                     class="social-btn-icon">
               </a>
 
-              <a href="assets/images/docs/CV_MV_SAMUEL_ARAÚJO.pdf" target="_blank"
-                class="btn custom-btn custom-btn-bg custom-btn-link">
+              <!-- Links de download com nome padronizado (B1, B6) -->
+              <a href="assets/docs/cv-samuel-araujo.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn custom-btn custom-btn-bg">
                 Baixar CV
               </a>
             </div>
@@ -156,9 +169,10 @@
         </div>
 
         <div class="col-lg-5 col-md-12 col-12">
-          <div class="about-image svg">
-            <img src="assets/images/raw/background.png" alt="assets/images/raw/background.png" class="img-fluid"
-              alt="svg image">
+          <div class="about-image svg text-center">
+            <img src="assets/images/optimized/background.webp"
+                 alt="Ilustração Samuel Araújo Anestesiologia Veterinária"
+                 class="img-fluid">
           </div>
         </div>
 
@@ -171,23 +185,24 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-8 offset-md-2">
-          <h2 class="col-lg-3 mx-auto">
+          <h2 class="col-lg-3 mx-auto text-center">
             <span>Serviços</span>
           </h2>
           <div class="container layout_padding2"></div>
           <div class="row">
 
             <!-- Primeira coluna-->
-            <div class="col-md-6"
-              style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="col-md-6 service-card-wrapper">
               <div class="img_box">
-                <img src="assets/images/raw/doctor_dark.png" alt="assets/images/raw/doctor.png"
-                  class="circle-image">
+                <img src="assets/images/optimized/doctor.webp"
+                     data-src-dark="assets/images/optimized/doctor_dark.webp"
+                     alt="Ícone de estetoscópio representando consulta veterinária"
+                     class="circle-image"
+                     loading="lazy">
               </div>
-              <div class="detail_box"
-                style="text-align: justify; display: flex; flex-direction: column; align-items: center;">
+              <div class="detail_box service-detail-box">
                 <h5>Consultas</h5>
-                <p style="font-weight: bold; color: #000; font-size: 15px;" class="dark-mode-text">
+                <p class="service-description dark-mode-text">
                   Se você tem notado alterações de comportamento no seu Pet como tristeza, apatia, cansaço fácil,
                   mudanças no apetite, alterações em fezes e urina ou no estado geral de saúde,
                   é importante a consulta de um médico veterinário para que possa ser feito o diagnóstico, tratamento ou
@@ -196,16 +211,17 @@
             </div>
 
             <!-- Segunda coluna-->
-            <div class="col-md-6"
-              style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-              <div class="">
-                <img src="assets/images/raw/seringa_dark.png" alt="assets/images/raw/seringa_light.png"
-                  class="circle-image">
+            <div class="col-md-6 service-card-wrapper">
+              <div class="img_box">
+                <img src="assets/images/optimized/seringa_light.webp"
+                     data-src-dark="assets/images/optimized/seringa_dark.webp"
+                     alt="Ícone de seringa representando protocolos vacinais e anestesia"
+                     class="circle-image"
+                     loading="lazy">
               </div>
-              <div class="detail_box"
-                style="text-align: justify; display: flex; flex-direction: column; align-items: center;">
+              <div class="detail_box service-detail-box">
                 <h5>Protocolos vacinais</h5>
-                <p style="font-weight: bold; color: #000; font-size: 15px;" class="dark-mode-text">
+                <p class="service-description dark-mode-text">
                   Se você deseja garantir a saúde e o bem-estar do seu Pet,
                   a vacinação é uma medida fundamental e que deve ser iniciada assim que possível.
                   Vacinas em dia ajudam a prevenir diversas doenças graves,
@@ -216,16 +232,17 @@
             </div>
 
             <!-- Terceira coluna-->
-            <div class="col-md-6"
-              style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="col-md-6 service-card-wrapper">
               <div class="img_box">
-                <img src="assets/images/raw/casa_dark.png" alt="assets/images/raw/casa_light.png"
-                  class="circle-image">
+                <img src="assets/images/optimized/casa_light.webp"
+                     data-src-dark="assets/images/optimized/casa_dark.webp"
+                     alt="Ícone de casa representando atendimento domiciliar"
+                     class="circle-image"
+                     loading="lazy">
               </div>
-              <div class="detail_box"
-                style="text-align: justify; display: flex; flex-direction: column; align-items: center;">
-                <h5>Atendimento à domicílio</h5>
-                <p style="font-weight: bold; color: #000; font-size: 15px;" class="dark-mode-text">
+              <div class="detail_box service-detail-box">
+                <h5>Atendimento a domicílio</h5>
+                <p class="service-description dark-mode-text">
                   O serviço veterinário domiciliar permite que o seu animal receba cuidados de qualidade no seu ambiente
                   familiar,
                   reduzindo o estresse e evitando deslocamentos que possam ser desconfortáveis.
@@ -236,15 +253,17 @@
             </div>
 
             <!-- Quarta coluna -->
-            <div class="col-md-6"
-              style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="col-md-6 service-card-wrapper">
               <div class="img_box">
-                <img src="assets/images/raw/exame.png" alt="assets/images/raw/exame_light.png" class="circle-image">
+                <img src="assets/images/optimized/exame_light.webp"
+                     data-src-dark="assets/images/optimized/exame.webp"
+                     alt="Ícone de prancheta e exames laboratoriais"
+                     class="circle-image"
+                     loading="lazy">
               </div>
-              <div class="detail_box"
-                style="text-align: justify; display: flex; flex-direction: column; align-items: center;">
+              <div class="detail_box service-detail-box">
                 <h5>Encaminhamento para exames</h5>
-                <p style="font-weight: bold; color: #000; font-size: 15px;" class="dark-mode-text">
+                <p class="service-description dark-mode-text">
                   Os exames são uma parte fundamental para garantir diagnósticos precisos e a definição do tratamento
                   mais apropriado para o caso do seu Pet,
                   tornando possível detectar doenças em estágios iniciais ou monitorar condições crônicas de maneira
@@ -256,7 +275,6 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
 
   <!--------------------------------->
@@ -266,7 +284,7 @@
     <div class="container">
       <div class="row">
 
-        <!-- COLUNA 1 -->
+        <!-- COLUNA 1: Formação -->
         <div class="col-lg-4 col-md-4 col-sm-12">
           <h2 class="mb-4 text-center">Formação</h2>
 
@@ -277,8 +295,8 @@
               </div>
               <div class="timeline-info">
                 <h6>
-                  <span style="color: #000;" class="dark-mode-text">Universidade Federal do Norte do Tocantins</span>
-                  <small style="color: #2e2b2b; font-size: 14px;" class="dark-mode-subtext">
+                  <span class="timeline-heading dark-mode-text">Universidade Federal do Norte do Tocantins</span>
+                  <small class="timeline-sub dark-mode-subtext d-block mt-1">
                     Bacharelado em Medicina Veterinária<br>
                     Araguaína - TO
                   </small>
@@ -292,8 +310,8 @@
               </div>
               <div class="timeline-info">
                 <h6>
-                  <span style="color: #000;" class="dark-mode-text">ESCOLA SESC DE ENSINO MÉDIO</span>
-                  <small style="color: #2e2b2b; font-size: 14px;" class="dark-mode-subtext">
+                  <span class="timeline-heading dark-mode-text">ESCOLA SESC DE ENSINO MÉDIO</span>
+                  <small class="timeline-sub dark-mode-subtext d-block mt-1">
                     Ensino médio em escola residência<br>
                     Rio de Janeiro - RJ
                   </small>
@@ -303,30 +321,9 @@
           </div>
         </div>
 
-        <!-- COLUNA 2 -->
+        <!-- COLUNA 2: Experiências Clínicas -->
         <div class="col-lg-4 col-md-4 col-sm-12">
           <h2 class="mb-4 text-center">Experiências</h2>
-
-          <div class="timeline-wrapper">
-            <div class="timeline-yr">
-              <span>2024</span>
-            </div>
-            <div class="timeline-info">
-              <h6>
-                <span style="color: #000;" class="dark-mode-text">CLÍNICA VETERINÁRIA ANIMALIA</span>
-                <small style="color: #2e2b2b; font-size: 14px;" class="dark-mode-text">
-                  Médico Veterinário<br>
-                  Balsas - MA
-                </small>
-              </h6>
-              <ul class="custom-list" style="font-size: 12px;  color: #000; font-weight: bold;">
-                <li class="dark-mode-text">Cirurgia de tecidos moles</li>
-                <li class="dark-mode-text">Procedimentos de rotina</li>
-                <li class="dark-mode-text">Análise de testes e exames laboratoriais</li>
-                <li class="dark-mode-text">Prescrição de receitas e orientação de tutores</li>
-              </ul>
-            </div>
-          </div>
 
           <div class="timeline">
             <div class="timeline-wrapper">
@@ -335,15 +332,35 @@
               </div>
               <div class="timeline-info">
                 <h6>
-                  <span style="color: #000;" class="dark-mode-text">UNIVERSIDADE FEDERAL DO PARÁ</span>
-                  <small style="color: #2e2b2b; font-size: 14px;" class="dark-mode-text">
+                  <span class="timeline-heading dark-mode-text">CLÍNICA VETERINÁRIA ANIMALIA</span>
+                  <small class="timeline-sub dark-mode-text d-block mt-1">
+                    Médico Veterinário<br>
+                    Balsas - MA
+                  </small>
+                </h6>
+                <ul class="custom-list timeline-list">
+                  <li class="dark-mode-text">Cirurgia de tecidos moles e anestesiologia</li>
+                  <li class="dark-mode-text">Procedimentos de rotina</li>
+                  <li class="dark-mode-text">Análise de testes e exames laboratoriais</li>
+                  <li class="dark-mode-text">Prescrição de receitas e orientação de tutores</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-wrapper">
+              <div class="timeline-yr">
+                <span>2024</span>
+              </div>
+              <div class="timeline-info">
+                <h6>
+                  <span class="timeline-heading dark-mode-text">UNIVERSIDADE FEDERAL DO PARÁ</span>
+                  <small class="timeline-sub dark-mode-text d-block mt-1">
                     Estágio supervisionado obrigatório<br>
                     Castanhal - PA
                   </small>
                 </h6>
-                <ul class="custom-list" style="font-size: 12px;  color: #000; font-weight: bold;">
-                  <li class="dark-mode-text">Preparo de material para exames laboratoriais e participação em necropsias
-                  </li>
+                <ul class="custom-list timeline-list">
+                  <li class="dark-mode-text">Preparo de material para exames laboratoriais e participação em necropsias</li>
                   <li class="dark-mode-text">Contenção e manejo de animais silvestres (aves, mamíferos e répteis)</li>
                   <li class="dark-mode-text">Comunicação com órgãos ambientais</li>
                   <li class="dark-mode-text">Neonatologia de primatas</li>
@@ -358,16 +375,15 @@
               </div>
               <div class="timeline-info">
                 <h6>
-                  <span style="color: #000;" class="dark-mode-text">FUNDAÇÃO ZOOBOTÂNICA DE MARABÁ</span>
-                  <small style="color: #2e2b2b; font-size: 14px;" class="dark-mode-text">
+                  <span class="timeline-heading dark-mode-text">FUNDAÇÃO ZOOBOTÂNICA DE MARABÁ</span>
+                  <small class="timeline-sub dark-mode-text d-block mt-1">
                     Estágio voluntário<br>
                     Marabá - PA
                   </small>
                 </h6>
-                <ul class="custom-list" style="font-size: 12px;  color: #000; font-weight: bold;">
+                <ul class="custom-list timeline-list">
                   <li class="dark-mode-text">Nutrição e dieta de animais selvagens</li>
-                  <li class="dark-mode-text">Planejamento e execução de enriquecimentos ambietais, sensoriais e
-                    cognitivos</li>
+                  <li class="dark-mode-text">Planejamento e execução de enriquecimentos ambientais, sensoriais e cognitivos</li>
                 </ul>
               </div>
             </div>
@@ -378,13 +394,13 @@
               </div>
               <div class="timeline-info">
                 <h6>
-                  <span style="color: #000;" class="dark-mode-text">OLVET SERVIÇOS VETERINÁRIOS</span>
-                  <small style="color: #000; font-size: 14px;" class="dark-mode-text">
+                  <span class="timeline-heading dark-mode-text">OLVET SERVIÇOS VETERINÁRIOS</span>
+                  <small class="timeline-sub dark-mode-text d-block mt-1">
                     Estágio voluntário<br>
                     Araguaína - TO
                   </small>
                 </h6>
-                <ul class="custom-list" style="font-size: 12px;  color: #000; font-weight: bold;">
+                <ul class="custom-list timeline-list">
                   <li class="dark-mode-text">Clínica médica e cirúrgica de pequenos animais</li>
                 </ul>
               </div>
@@ -392,26 +408,25 @@
           </div>
         </div>
 
-        <!-- COLUNA 3 -->
+        <!-- COLUNA 3: Certificações & Pesquisa (Q9) -->
         <div class="col-lg-4 col-md-4 col-sm-12">
           <h2 class="mb-4 text-center">Certificações</h2>
           <div class="timeline">
 
+            <!-- PIBIC destacado como Iniciação Científica (Q9) -->
             <div class="timeline-wrapper">
               <div class="timeline-yr">
                 <span>2024</span>
               </div>
               <div class="timeline-info">
                 <h6>
-                  <span style="color: #000;" class="dark-mode-text">PROGRAMA INSTITUCIONAL DE INICIAÇÃO CIENTÍFICA
-                    (PIBIC)</span>
-                  <small style="color: #000; font-size: 14px;" class="dark-mode-text">UFNT</small>
+                  <span class="timeline-heading dark-mode-text">INICIAÇÃO CIENTÍFICA (PIBIC)</span>
+                  <small class="timeline-sub dark-mode-text d-block mt-1">UFNT · Pesquisa Científica</small>
                 </h6>
-                <ul class="custom-list" style="font-size: 12px; font-weight: bold;">
+                <ul class="custom-list timeline-list">
                   <li class="dark-mode-text">Coleta e análise estatística de dados</li>
-                  <li class="dark-mode-text">Oncologia veterinária</li>
-                  <li class="dark-mode-text">Medicina felina</li>
-                  <li class="dark-mode-text">Elaboração de relatórios</li>
+                  <li class="dark-mode-text">Oncologia veterinária em animais de companhia</li>
+                  <li class="dark-mode-text">Medicina felina e elaboração de relatórios científicos</li>
                 </ul>
               </div>
             </div>
@@ -422,14 +437,13 @@
               </div>
               <div class="timeline-info">
                 <h6>
-                  <span style="color: #000;" class="dark-mode-text">BUSINESS INTELIGENCE</span>
-                  <small style="color: #2e2b2b; font-size: 14px;" class="dark-mode-text">Google</small>
+                  <span class="timeline-heading dark-mode-text">BUSINESS INTELLIGENCE</span>
+                  <small class="timeline-sub dark-mode-text d-block mt-1">Google</small>
                 </h6>
-                <ul class="custom-list" style="font-size: 12px; font-weight: bold;">
+                <ul class="custom-list timeline-list">
                   <li class="dark-mode-text">Dashboards e relatórios</li>
-                  <li class="dark-mode-text">ETL</li>
+                  <li class="dark-mode-text">ETL e modelagem de dados</li>
                   <li class="dark-mode-text">Visualização de dados</li>
-                  <li class="dark-mode-text">Modelagem de dados</li>
                 </ul>
               </div>
             </div>
@@ -440,14 +454,13 @@
               </div>
               <div class="timeline-info">
                 <h6>
-                  <span style="color: #000;" class="dark-mode-text">ANÁLISE DE DADOS</span>
-                  <small style="color: #2e2b2b; font-size: 14px;" class="dark-mode-text">Google</small>
+                  <span class="timeline-heading dark-mode-text">ANÁLISE DE DADOS</span>
+                  <small class="timeline-sub dark-mode-text d-block mt-1">Google</small>
                 </h6>
-                <ul class="custom-list" style="font-size: 12px;  color: #000; font-weight: bold;">
-                  <li class="dark-mode-text">Python</li>
-                  <li class="dark-mode-text">Integridade dos dados</li>
+                <ul class="custom-list timeline-list">
+                  <li class="dark-mode-text">Python e SQL</li>
+                  <li class="dark-mode-text">Integridade e limpeza de dados</li>
                   <li class="dark-mode-text">Estruturas de dados</li>
-                  <li class="dark-mode-text">SQL</li>
                 </ul>
               </div>
             </div>
@@ -458,14 +471,13 @@
               </div>
               <div class="timeline-info">
                 <h6>
-                  <span style="color: #000;" class="dark-mode-text">GERENCIAMENTO DE PROJETOS</span>
-                  <small style="color: #2e2b2b; font-size: 14px;" class="dark-mode-text">Google</small>
+                  <span class="timeline-heading dark-mode-text">GERENCIAMENTO DE PROJETOS</span>
+                  <small class="timeline-sub dark-mode-text d-block mt-1">Google</small>
                 </h6>
-                <ul class="custom-list" style="font-size: 12px;  color: #000; font-weight: bold;">
-                  <li class="dark-mode-text">Avaliação de riscos</li>
-                  <li class="dark-mode-text">Gerenciamento de mudanças</li>
-                  <li class="dark-mode-text">Gestão ágil</li>
-                  <li class="dark-mode-text">Comunicação eficaz</li>
+                <ul class="custom-list timeline-list">
+                  <li class="dark-mode-text">Avaliação de riscos e processos</li>
+                  <li class="dark-mode-text">Gerenciamento de mudanças e gestão ágil</li>
+                  <li class="dark-mode-text">Comunicação eficaz com equipes</li>
                 </ul>
               </div>
             </div>
@@ -484,16 +496,18 @@
         <div class="col-lg-11 text-center mx-auto col-12">
 
           <div class="col-lg-8 mx-auto">
-            <h2>Meus projetos</h2>
+            <h2>Pesquisa & Projetos</h2>
           </div>
           <div class="owl-carousel owl-theme">
 
-            <!-- PROJETO 1 -->
+            <!-- PROJETO 1 - TCC (B2 corrigido) -->
             <div class="item">
-              <a href="assets/images/raw/TCC_SAMUEL.pdf" target="_blank">
+              <a href="assets/docs/tcc-samuel-araujo.pdf" target="_blank" rel="noopener noreferrer" title="Abrir TCC (PDF)">
                 <div class="project-info">
-                  <img src="assets/images/raw/projeto_1.png" alt="assets/images/raw/projeto_1.png" class="img-fluid"
-                    alt="project image">
+                  <img src="assets/images/optimized/projeto_1.webp"
+                       alt="Capa do TCC Samuel Araújo - Neoplasias em animais de companhia"
+                       class="img-fluid"
+                       loading="lazy">
                 </div>
               </a>
             </div>
@@ -501,34 +515,40 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
 
-  <!-- CONTATO -->
+  <!-- CONTATO & REGIÃO DE ATENDIMENTO (Q5, Q6) -->
   <section class="contact py-5" id="contact">
     <div class="container">
       <div class="row">
 
+        <!-- Mapa e Informações de Balsas - MA (Q5, Q6) -->
         <div class="col-lg-5 mr-lg-5 col-12">
-          <div class="google-map w-100">
+          <div class="google-map w-100 map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392.54634241281754!2d-48.2161809!3d-7.1845876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d90da116c4df99%3A0xa137591833379a3!2sR.%2013%20de%20Maio%2C%20394%20-%20Vila%20Rosario%2C%20Aragua%C3%ADna%20-%20TO%2C%2077823-090%2C%20Brazil!5e0!3m2!1sen!2sbr!4v1549875377188"
-              width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+              title="Região de Atendimento - Balsas MA"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63478.48398433385!2d-46.0754245!3d-7.531238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x932fa90b9b4a4cb7%3A0x6b77ddf4058d8e61!2sBalsas%20-%20MA!5e0!3m2!1spt-BR!2sbr!4v1710000000000"
+              class="map-iframe"
+              allowfullscreen
+              loading="lazy"></iframe>
           </div>
 
           <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
             <div class="contact-info-item">
-              <h3 class="mb-3 text-white"></h3>
-              <p class="footer-text mb-0">(63) 99233-2009</p>
-              <p>mvsamuel.ajlima@gmail.com</p>
+              <h3 class="mb-3 text-white">Região de Atendimento</h3>
+              <p class="footer-text mb-1"><i class="uil uil-map-pin"></i> Balsas - MA e região</p>
+              <p class="footer-text mb-1"><i class="uil uil-whatsapp"></i> (63) 99233-2009</p>
+              <p class="mb-0 text-white-50"><i class="uil uil-envelope"></i> mvsamuel.ajlima@gmail.com</p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-6 col-12">
-          <div class="contact-form" style="text-align: center;">
+          <div class="contact-form contact-form-center">
             <h4 class="mb-4">Precisando de serviços veterinários?<br>Entre em contato!</h4>
 
-            <!-- Enviando e-mail -->
+            <!-- Formulário de contato integrado com Formspree -->
             <form id="contactForm" action="https://formspree.io/f/mqazrbbk" method="POST">
               <div class="row">
                 <div class="col-lg-6 col-12">
@@ -540,7 +560,7 @@
                 </div>
 
                 <div class="col-12">
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensagem"
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensagem / Detalhes do procedimento"
                     required></textarea>
                 </div>
 
@@ -551,12 +571,15 @@
             </form>
           </div>
         </div>
+
+      </div>
+    </div>
   </section>
 
-  <!-- SCRIPT JAVASCRIPT PARA EMAIL -->
+  <!-- SCRIPT PARA ENVIO DO FORMULÁRIO -->
   <script>
     document.getElementById('contactForm').addEventListener('submit', function (event) {
-      event.preventDefault();  // Evita o comportamento padrão de recarregar a página
+      event.preventDefault();
 
       const form = event.target;
       const formData = new FormData(form);
@@ -569,32 +592,33 @@
         }
       }).then(response => {
         if (response.ok) {
-          alert("Mensagem enviada com sucesso!");  // Feedback positivo
-          form.reset();  // Limpa o formulário após o envio
+          alert("Mensagem enviada com sucesso!");
+          form.reset();
         } else {
-          alert("Ocorreu um erro ao enviar a mensagem. Tente novamente.");  // Feedback de erro
+          alert("Ocorreu um erro ao enviar a mensagem. Tente novamente.");
         }
       }).catch(error => {
-        alert("Ocorreu um erro ao enviar a mensagem. Tente novamente.");  // Caso ocorra erro na conexão
+        alert("Ocorreu um erro ao enviar a mensagem. Tente novamente.");
       });
     });
   </script>
 
-  <!-- RODAPÉ -->
+  <!-- RODAPÉ PREENCHIDO (Q6) -->
   <footer class="footer py-5">
     <div class="container">
       <div class="row">
 
         <div class="col-lg-12 col-12">
-          <p class="copyright-text text-center"></p>
-          <p class="copyright-text text-center"></p>
+          <p class="copyright-text text-center mb-1">© 2026 Samuel Araújo · CRMV · Todos os direitos reservados.</p>
+          <p class="copyright-text text-center text-muted">Médico Veterinário · Anestesiologia Veterinária</p>
         </div>
 
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <!-- Bibliotecas JS atualizadas (Q8) -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/Headroom.js"></script>
@@ -602,6 +626,7 @@
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/smoothscroll.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/analytics-events.js"></script>
 
 </body>
 

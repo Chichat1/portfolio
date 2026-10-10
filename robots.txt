@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://seu-dominio-ou-github-pages.com/sitemap.xml
+Sitemap: https://chichat1.github.io/portfolio/sitemap.xml
