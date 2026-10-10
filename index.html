@@ -102,11 +102,14 @@
   <!--------------------------------->
   <!--           SOBRE             -->
   <!--------------------------------->
-  <section class="about full-screen d-lg-flex justify-content-center align-items-center">
+  <!--------------------------------->
+  <!--           SOBRE             -->
+  <!--------------------------------->
+  <section class="about full-screen d-flex align-items-center" id="about">
+    <div class="about-overlay"></div>
     <div class="container">
       <div class="row">
-
-        <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+        <div class="col-lg-8 col-md-10 col-12">
           <div class="about-text">
             <small class="small-text">Seja bem-vindo(a)<span class="mobile-block">!</span></small>
             <h1 class="animated animated-text">
@@ -167,112 +170,102 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-5 col-md-12 col-12">
-          <div class="about-image svg text-center">
-            <img src="assets/images/optimized/background.webp"
-                 alt="Ilustração Samuel Araújo Anestesiologia Veterinária"
-                 class="img-fluid">
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
-  <section class="service_section layout_padding" id="services">
-    <div class="container-fluid">
+  <!-- SERVIÇOS EM 3 COLUNAS -->
+  <section class="service_section py-5" id="services">
+    <div class="container">
       <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <h2 class="col-lg-3 mx-auto text-center">
-            <span>Serviços</span>
-          </h2>
-          <div class="container layout_padding2"></div>
-          <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2><span>Serviços</span></h2>
+        </div>
+      </div>
 
-            <!-- Primeira coluna-->
-            <div class="col-md-6 service-card-wrapper">
-              <div class="img_box">
-                <img src="assets/images/optimized/doctor.webp"
-                     data-src-dark="assets/images/optimized/doctor_dark.webp"
-                     alt="Ícone de estetoscópio representando consulta veterinária"
-                     class="circle-image"
-                     loading="lazy">
-              </div>
-              <div class="detail_box service-detail-box">
-                <h5>Consultas</h5>
-                <p class="service-description dark-mode-text">
-                  Se você tem notado alterações de comportamento no seu Pet como tristeza, apatia, cansaço fácil,
-                  mudanças no apetite, alterações em fezes e urina ou no estado geral de saúde,
-                  é importante a consulta de um médico veterinário para que possa ser feito o diagnóstico, tratamento ou
-                  a prevenção das doenças que possam comprometer a saúde e o bem-estar dos nossos animais.</p>
-              </div>
+      <div class="row justify-content-center">
+
+        <!-- Coluna 1 -->
+        <div class="col-lg-4 col-md-6 col-12 service-col">
+          <div class="service-card">
+            <div class="service-icon-box">
+              <img src="assets/images/optimized/doctor_dark.webp"
+                   data-src-dark="assets/images/optimized/doctor.webp"
+                   alt="Ícone de estetoscópio representando consulta veterinária"
+                   class="circle-image"
+                   loading="lazy">
             </div>
-
-            <!-- Segunda coluna-->
-            <div class="col-md-6 service-card-wrapper">
-              <div class="img_box">
-                <img src="assets/images/optimized/seringa_light.webp"
-                     data-src-dark="assets/images/optimized/seringa_dark.webp"
-                     alt="Ícone de seringa representando protocolos vacinais e anestesia"
-                     class="circle-image"
-                     loading="lazy">
-              </div>
-              <div class="detail_box service-detail-box">
-                <h5>Protocolos vacinais</h5>
-                <p class="service-description dark-mode-text">
-                  Se você deseja garantir a saúde e o bem-estar do seu Pet,
-                  a vacinação é uma medida fundamental e que deve ser iniciada assim que possível.
-                  Vacinas em dia ajudam a prevenir diversas doenças graves,
-                  que podem comprometer a saúde do seu animal e dos contactantes que vivem com ele, sejam eles humanos,
-                  cães ou gatos. Vacinar é um ato de amor e cuidado que protege a vida do seu companheiro e a sua
-                  também.</p>
-              </div>
-            </div>
-
-            <!-- Terceira coluna-->
-            <div class="col-md-6 service-card-wrapper">
-              <div class="img_box">
-                <img src="assets/images/optimized/casa_light.webp"
-                     data-src-dark="assets/images/optimized/casa_dark.webp"
-                     alt="Ícone de casa representando atendimento domiciliar"
-                     class="circle-image"
-                     loading="lazy">
-              </div>
-              <div class="detail_box service-detail-box">
-                <h5>Atendimento a domicílio</h5>
-                <p class="service-description dark-mode-text">
-                  O serviço veterinário domiciliar permite que o seu animal receba cuidados de qualidade no seu ambiente
-                  familiar,
-                  reduzindo o estresse e evitando deslocamentos que possam ser desconfortáveis.
-                  Seja para consultas de rotina, vacinas ou cuidados especiais,
-                  o atendimento em casa oferece praticidade para o tutor e segurança para o Pet.
-                </p>
-              </div>
-            </div>
-
-            <!-- Quarta coluna -->
-            <div class="col-md-6 service-card-wrapper">
-              <div class="img_box">
-                <img src="assets/images/optimized/exame_light.webp"
-                     data-src-dark="assets/images/optimized/exame.webp"
-                     alt="Ícone de prancheta e exames laboratoriais"
-                     class="circle-image"
-                     loading="lazy">
-              </div>
-              <div class="detail_box service-detail-box">
-                <h5>Encaminhamento para exames</h5>
-                <p class="service-description dark-mode-text">
-                  Os exames são uma parte fundamental para garantir diagnósticos precisos e a definição do tratamento
-                  mais apropriado para o caso do seu Pet,
-                  tornando possível detectar doenças em estágios iniciais ou monitorar condições crônicas de maneira
-                  mais eficaz.
-                  Exames regulares são essenciais para garantir ao seu amigo uma vida longa e saudável ao seu lado.</p>
-              </div>
+            <div class="service-detail-box">
+              <h5 class="mb-3">Consultas</h5>
+              <p class="service-description dark-mode-text">
+                Se você tem notado alterações de comportamento no seu Pet como tristeza, apatia, cansaço fácil,
+                mudanças no apetite, alterações em fezes e urina ou no estado geral de saúde,
+                é importante a consulta de um médico veterinário para diagnóstico e prevenção.
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- Coluna 2 -->
+        <div class="col-lg-4 col-md-6 col-12 service-col">
+          <div class="service-card">
+            <div class="service-icon-box">
+              <img src="assets/images/optimized/seringa_dark.webp"
+                   data-src-dark="assets/images/optimized/seringa_light.webp"
+                   alt="Ícone de seringa representando protocolos vacinais e anestesia"
+                   class="circle-image"
+                   loading="lazy">
+            </div>
+            <div class="service-detail-box">
+              <h5 class="mb-3">Protocolos vacinais</h5>
+              <p class="service-description dark-mode-text">
+                A vacinação é uma medida fundamental para prevenir diversas doenças graves em cães e gatos,
+                protegendo tanto o animal quanto os contactantes. Vacinar é um ato de amor e cuidado com a saúde coletiva.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna 3 -->
+        <div class="col-lg-4 col-md-6 col-12 service-col">
+          <div class="service-card">
+            <div class="service-icon-box">
+              <img src="assets/images/optimized/casa_dark.webp"
+                   data-src-dark="assets/images/optimized/casa_light.webp"
+                   alt="Ícone de casa representando atendimento domiciliar"
+                   class="circle-image"
+                   loading="lazy">
+            </div>
+            <div class="service-detail-box">
+              <h5 class="mb-3">Atendimento a domicílio</h5>
+              <p class="service-description dark-mode-text">
+                O serviço veterinário domiciliar permite que o paciente receba cuidados no conforto do ambiente familiar,
+                reduzindo o estresse e oferecendo segurança e comodidade para a família.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna 4 (centralizada na linha de 3 colunas) -->
+        <div class="col-lg-4 col-md-6 col-12 service-col">
+          <div class="service-card">
+            <div class="service-icon-box">
+              <img src="assets/images/optimized/exame.webp"
+                   data-src-dark="assets/images/optimized/exame_light.webp"
+                   alt="Ícone de prancheta e exames laboratoriais"
+                   class="circle-image"
+                   loading="lazy">
+            </div>
+            <div class="service-detail-box">
+              <h5 class="mb-3">Encaminhamento para exames</h5>
+              <p class="service-description dark-mode-text">
+                Exames clínicos e laboratoriais são essenciais para diagnósticos precisos e planejamento cirúrgico e anestésico,
+                detectando alterações precocemente e assegurando máxima segurança.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

@@ -680,6 +680,104 @@ strong {
   vertical-align: middle;
 }
 
+/* Banner de Apresentação com Imagem Grande no Fundo e Overlay de Opacidade */
+.about {
+  position: relative;
+  background-image: url('../images/optimized/hero-banner.webp');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  min-height: 85vh;
+}
+
+.about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.96) 0%,
+    rgba(255, 255, 255, 0.92) 50%,
+    rgba(255, 255, 255, 0.70) 80%,
+    rgba(255, 255, 255, 0.50) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.dark-mode .about-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(12, 12, 13, 0.97) 0%,
+    rgba(12, 12, 13, 0.93) 50%,
+    rgba(12, 12, 13, 0.75) 80%,
+    rgba(12, 12, 13, 0.60) 100%
+  );
+}
+
+.about > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Cards de Serviços em 3 Colunas */
+.service-col {
+  margin-bottom: 30px;
+}
+
+.service-card {
+  background-color: var(--cor-fundo, #ffffff);
+  border: 1px solid var(--cor-borda, #eaeaea);
+  border-radius: 16px;
+  padding: 32px 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 179, 74, 0.4);
+}
+
+.dark-mode .service-card {
+  background-color: #141416;
+  border-color: #242428;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-icon-box {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--cor-fundo-secundario, #f9f9f9);
+  border: 1.5px solid var(--cor-borda, #eaeaea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon-box {
+  background-color: rgba(0, 179, 74, 0.12);
+  border-color: var(--cor-primaria, #00b34a);
+  transform: scale(1.06);
+}
+
+.dark-mode .service-icon-box {
+  background-color: #1c1c1e;
+  border-color: #2c2c2e;
+}
+
 .service-card-wrapper {
   display: flex;
   flex-direction: column;
@@ -693,13 +791,15 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .service-description {
   font-weight: 500;
   color: #000;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .dark-mode .service-description {
