@@ -1,10 +1,11 @@
 (function ($) {
   "use strict";
 
-  // Função para aplicar o tema e alternar imagens com data-src-dark
+  // Função para aplicar o tema e alternar imagens com data-src-dark / data-src-light
   function applyTheme(isDark) {
     $('body').toggleClass('dark-mode', isDark);
     $('.color-mode-icon').toggleClass('active', isDark);
+    $('.color-mode-icon.uil').toggleClass('uil-sun', isDark).toggleClass('uil-moon', !isDark);
 
     // Alternar imagens que possuem data-src-dark (Q1)
     $('img[data-src-dark]').each(function () {
@@ -18,16 +19,15 @@
     });
   }
 
-  // Carregar preferência salva no localStorage
-  var savedTheme = localStorage.getItem('portfolio_theme');
-  if (savedTheme === 'dark') {
-    applyTheme(true);
+  // Iniciar automaticamente em modo escuro sempre que o site for aberto
+  applyTheme(true);
+  if (localStorage.getItem('portfolio_theme')) {
+    localStorage.removeItem('portfolio_theme');
   }
 
   // Alternador de modo de cor (claro / escuro)
   $('.color-mode').on('click', function () {
     var isDark = !$('body').hasClass('dark-mode');
-    localStorage.setItem('portfolio_theme', isDark ? 'dark' : 'light');
     applyTheme(isDark);
   });
 

@@ -337,8 +337,15 @@ strong {
   color: #ffffff;
 }
 
+body.dark-mode,
 .dark-mode {
-  background: #0c0c0d;
+  --cor-fundo: #0c0c0d;
+  --cor-fundo-secundario: #141416;
+  --cor-texto: #cccccc;
+  --cor-texto-escuro: #ffffff;
+  --cor-borda: #242428;
+  background-color: #0c0c0d;
+  color: #cccccc;
 }
 
 .dark-mode .navbar-light .navbar-nav .nav-link {

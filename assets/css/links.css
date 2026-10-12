@@ -197,3 +197,39 @@
   color: #888;
   margin-top: 30px;
 }
+
+/* Modo escuro para página de links */
+.dark-mode.links-page,
+.dark-mode .links-page {
+  background-color: #0c0c0d;
+  color: #cccccc;
+}
+
+.dark-mode .links-title {
+  color: #ffffff;
+}
+
+.dark-mode .links-bio {
+  color: #cccccc;
+}
+
+.dark-mode .link-btn-card {
+  background: #141416;
+  border-color: #242428;
+  color: #ffffff;
+}
+
+.dark-mode .link-btn-card:hover {
+  border-color: var(--cor-primaria, #00b34a);
+  color: var(--cor-primaria, #00b34a) !important;
+}
+
+.dark-mode .links-social-icon-btn {
+  background: #141416;
+  border-color: #242428;
+  color: #ffffff;
+}
+
+.dark-mode .links-theme-toggle button {
+  color: #aaa;
+}
